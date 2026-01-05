@@ -1,7 +1,7 @@
 import axios, { InternalAxiosRequestConfig } from "axios";
 
 const instance = axios.create({
-    baseURL: 'https://chat-az1hw9gao-toko122s-projects.vercel.app/api'
+    baseURL: 'https://chat-app-six-liard-14.vercel.app/api'
 })
 
 instance.interceptors.request.use(
