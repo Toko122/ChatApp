@@ -1,0 +1,46 @@
+.HeroHeader{
+    opacity: 1;
+    animation: HeroHeader 1s ease-in-out;
+}
+
+.HeroP{
+    opacity: 1;
+    animation: HeroP 1s ease-in-out;
+}
+
+.HeroInput{
+    opacity: 1;
+    animation: HeroInput 1s ease-in-out;
+}
+
+
+@keyframes HeroHeader{
+    from{
+      opacity: 0;
+      transform: translateX(200px);
+    }to{
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+
+
+@keyframes HeroP{
+    from{
+      opacity: 0;
+      transform: translateX(-200px);
+    }to{
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+
+@keyframes HeroInput{
+    from{
+      opacity: 0;
+      transform: translateY(100px);
+    }to{
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
