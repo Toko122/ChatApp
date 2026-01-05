@@ -1,9 +1,9 @@
 import connectDb from "@/lib/connectDb";
 import Message from "@/models/message";
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
 
-export async function GET(req: Request, context: {params: {chatId: string}}) {
+export async function GET(req: NextRequest, context: {params: Promise<{chatId: string}>}) {
      try{
        await connectDb()
        const {chatId} = await context.params
