@@ -5,7 +5,7 @@ const httpServer = http.createServer()
 
 const io = new Server(httpServer, {
      cors: {
-        origin: 'https://chat-app-tr8x.vercel.app',
+        origin: 'https://chat-6aq0klard-toko122s-projects.vercel.app',
         methods: 'GET POST'
      }
 })
