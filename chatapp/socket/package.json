@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "start": "ts-node server.ts"
+    "build": "tsc",
+    "start": "node dist/server.js"
   },
   "dependencies": {
-    "socket.io": "^4.7.5",
-    "ts-node": "^10.9.2",
+    "socket.io": "^4.7.5"
+  },
+  "devDependencies": {
     "typescript": "^5.4.0"
   }
 }
