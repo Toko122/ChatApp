@@ -6,7 +6,7 @@ import React, { useEffect, useState, useRef } from 'react'
 import { FaPaperPlane, FaUserCircle } from 'react-icons/fa'
 import { io, Socket } from 'socket.io-client'
 
-const socket: Socket = io('http://localhost:5000', {
+const socket: Socket = io('https://chat-app-six-liard-14.vercel.app', {
     transports: ['websocket']
 })
 
