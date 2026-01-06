@@ -3,6 +3,8 @@ import http from 'http'
 
 const httpServer = http.createServer()
 
+const PORT = process.env.PORT || 5000;
+
 const io = new Server(httpServer, {
      cors: {
         origin: '*',
@@ -35,6 +37,6 @@ io.on('connection', (socket) => {
   })
 })
 
-httpServer.listen(5000, () => {
+httpServer.listen(PORT, () => {
   console.log('Socket.IO server running on https://chat-app-six-liard-14.vercel.app')
 })

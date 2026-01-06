@@ -41,7 +41,6 @@ const ChatPage = () => {
 
   useEffect(scrollToBottom, [messages])
 
-  // 🔹 auth + chat info
   useEffect(() => {
     const senderId = localStorage.getItem('userId')
     if (!senderId) {
@@ -68,7 +67,6 @@ const ChatPage = () => {
     fetchChat()
   }, [chatId, router])
 
-  // 🔹 socket setup
   useEffect(() => {
     if (!currentUserId) return
 
