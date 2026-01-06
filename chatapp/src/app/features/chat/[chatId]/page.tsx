@@ -82,7 +82,6 @@ const ChatPage = () => {
     }
   }, [currentUserId])
 
-  // 🔹 fetch old messages
   useEffect(() => {
     if (!chatId) return
 
@@ -107,6 +106,8 @@ const ChatPage = () => {
       chatId: chatId as string,
       text: message
     }
+
+    setMessages(prev => [...prev, msgData])
 
     socket.emit('sendMessage', msgData)
 
