@@ -151,7 +151,7 @@ const ChatPage = () => {
           {messages.map((msg, i) => (
             <div
               key={i}
-              className={`max-w-xs px-4 py-2 rounded-xl ${
+              className={`max-w-xs px-4 py-2 rounded-xl break-words whitespace-pre-wrap overflow-hidden ${
                 msg.senderId === currentUserId
                   ? 'bg-indigo-600 ml-auto text-white'
                   : 'bg-gray-700 mr-auto text-white'
