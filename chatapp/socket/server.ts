@@ -38,5 +38,5 @@ io.on('connection', (socket) => {
 })
 
 httpServer.listen(PORT, () => {
-  console.log('Socket.IO server running on https://chat-app-six-liard-14.vercel.app')
+  console.log('Socket.IO server running on https://chatapp-3jtw.onrender.com')
 })
