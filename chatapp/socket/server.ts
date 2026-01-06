@@ -36,5 +36,5 @@ io.on('connection', (socket) => {
 })
 
 httpServer.listen(5000, () => {
-  console.log('🔥 Socket.IO server running on http://localhost:5000')
+  console.log('Socket.IO server running on https://chat-app-six-liard-14.vercel.app')
 })
